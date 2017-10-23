@@ -21,6 +21,7 @@ a {
 
 .link-block {
     display: flex;
+    -ms-display:flex;
 }
 
 .link {
