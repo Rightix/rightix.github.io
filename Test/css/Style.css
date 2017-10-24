@@ -12,6 +12,7 @@ a {
 
 .header {
     display: flex;
+    -ms-display:flex;
     background: url(../images/bgbg.jpg) no-repeat;
     background-size: 100%;
     background-position: 0 40%;
