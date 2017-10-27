@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,7.." rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <!--    <link rel="stylesheet" href="css/bootstrap-grid.css">-->
 </head>
 
 <body>
@@ -17,11 +17,14 @@
         <div class="container-fluid">
             <div class="container top-header">
                 <div class="logo">
-                    <a href="#"><img src="/images/logo.png" alt=""></a>
+                    <a href="#"><img src="images/logo.png" alt=""></a>
                 </div>
                 <div class="header-items">
                     <div class="number">
-                        <img src="/images/layer-130.png" alt=""> +7 (81459) 3-70-09
+                        <img src="images/layer-130.png" alt="">
+                        <span>
+                            +7 (81459) 3-70-09
+                        </span>
                     </div>
                     <div class="call">
                         <button>
@@ -68,17 +71,27 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
-       jQuery(document).ready(function(e){
 
-    $(function(e) {
-    $(".search-icon").click(function(e) {
-    $(.search).toggleClass("active");
-        })
-    });
-    });
-    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        $('body').on('click', '.search-icon', function(e) {
+            if ($('#search').val() == '' || !$('.search').hasClass('active')) {
+                //* если текстовое поле пустое или свернуто - не даем форме отправиться
+                //* и сворачиваем/разворачиваем его
+                e.preventDefault();
+                e.stopPropagation();
+                $('.search').toggleClass('active');
+            }
+        });
+        //* не даем свернуться текстовому полю при клике на нём
+        $('body').on('click', '.search', function(e) {
+            e.stopPropagation();
+        });
+        //* сворачиваем поле при кли клике в любом месте
+        $('html').on('click', function(e) {
+            $('.search').removeClass('active');
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>

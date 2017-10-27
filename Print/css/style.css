@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Arial";
-    src: url("../fonts/ArialRegular.ttf") format("truetype");
+    src: url("fonts/ArialRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -67,6 +67,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-right: 37px;
 }
 
@@ -74,8 +77,10 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: Roboto Slab;
+    font-family: "Roboto Slab";
     font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
     color: #fff;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -103,7 +108,23 @@ button {
 
 .search {
     position: absolute;
-    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    right: -1500px;
+    top: 0;
+    height: 88px;
+    width: 450px;
+    padding-left: 27px;
+    background: #49bffc;
+    white-space: nowrap;
+    z-index: 3;
+    -webkit-transition: background .55s ease;
+    transition: background .55s ease;
 
 }
 
@@ -115,7 +136,7 @@ button {
     -ms-flex-align: center;
     align-items: center;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
     height: 88px;
     width: 450px;
@@ -124,6 +145,8 @@ button {
     white-space: nowrap;
     z-index: 3;
     visibility: visible;
+    -webkit-transition: background .55s ease;
+    transition: background .55s ease;
 
 }
 
@@ -146,7 +169,7 @@ button {
 }
 
 .s-button {
-    background: url(/images/search-w.png);
+    background: url(images/search-w.png);
     border: none;
     height: 32px;
     width: 32px;
@@ -240,13 +263,9 @@ transition: background .55s ease;
 
 .search-icon {
     display: block;
-    background: url(/images/search.png);
+    background: url(../images/search.png);
     height: 32px;
     width: 32px;
-    position: absolute;
-    right: 0;
-
-    z-index: 1;
     cursor: pointer;
 }
 
@@ -266,7 +285,7 @@ transition: background .55s ease;
 
 .service {
     height: 550px;
-    background: url(/images/texture.jpg);
+    background: url(../images/texture.jpg);
 }
 
 .work {
