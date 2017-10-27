@@ -18,7 +18,7 @@ li {
     list-style: none;
 }
 
-section {
+.section {
     min-height: 55vh;
 }
 
@@ -88,4 +88,50 @@ a {
     color: #fff;
     font-style: normal;
     font-weight: 600;
+}
+.section-2{
+    min-height: 920px;
+    background: url(../images/uzor2.png) no-repeat bottom left;
+}
+.why{
+    padding: 155px 0 0 40px;
+}
+.why-h {
+    padding: 155px 0px 0;
+}
+.why-h h1{
+    line-height: 100px;
+    color: #424c5c;
+    font-size: 64px;
+}
+.why-item{
+    
+    font-family: Ubuntu;
+    font-size: 13px;
+    color: #9f9399;
+    margin: 0 0 40px 0;
+}
+.why-item > img{
+    width: 140px;
+    height:84px;
+    
+    
+
+}
+.why-img{
+    display: inline;
+}
+
+.why-item h4 {
+    font-family: Intro-Rust;
+    color:#424c5c;
+    font-size: 20px;
+    
+}
+.why-text{
+    margin: 0 0 0 30px;
+     display: inline;
+}
+.why-text p{
+    margin: 20px 0;
 }
