@@ -26,7 +26,7 @@
                         <span>+7 (81459) 3-70-09</span>
                     </div>
                     <div class="call">
-                        <button class="button b">
+                        <button class="button-b">
                             обратный звонок
                         </button>
                     </div>
@@ -208,10 +208,52 @@
         </div>
     </div>
 
-    <div class="equip"></div>
+    <div class="equip">
+        <div class="equip-row">
+            <div class="equip-item">
+                <h2>Оборудование</h2>
+                <p>Мы обеспечиваем контроль за качеством и сроками прохождения заказов: начиная от предпечатной подготовки (изготовления макета, цветокоррекции, верстки), печати, до- и послепечатной обработки.</p>
+            </div>
+            <div class=""><iframe width="469" height="355" src="https://www.youtube.com/embed/4KzFe50RQkQ?showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+
+        </div>
+        <h2>Как нас найти</h2>
+    </div>
     <div class="search-us"></div>
-    <div class="map"></div>
-    <div class="footer"></div>
+    <div class="map">
+        <div class="container">
+            <div class="contacts">
+                <h4>Костомукша-Медиа</h4><br>
+                <span class="c-place">
+                <img src="images/place.png" alt="">Республика Карелия,<br> г. Костомукша, ул. Звёздная, д. 6</span>
+                <span class="c-mail"><img src="images/mailr.png" alt=""><a href="mailto:vajnola@onego.ru">vajnola@onego.ru</a> </span>
+                <span class="c-call"><img src="images/callr.png" alt="">+7 (81459) 3-70-09</span>
+            <a href="#" class="button">контактная информация</a>
+            </div>
+        </div>
+        <div id="googlemaps">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-item"><span class="media">© 2017 <br> ООО «Костомукша-Медиа»</span> <img class="interso" src="images/interso-logo.png" alt=""><span class="copyright">2017 © Разработка и поддержка<br> сайта ООО «<a href="#">Интэрсо</a>»</span></div>
+                <div class="footer-item"><a class="mr" href="#">О КОМПАНИИ</a>
+                
+                <a class="sub-a" href="#">Сертификаты</a><a href="#" class="sub-a">Партнеры</a><a class="sub-a" href="#">Новости</a><a class="sub-a" href="#">Отзывы</a><a href="#" class="sub-a">Вакансии</a></div>
+                <div class="footer-item"><a href="#">НАШИ РАБОТЫ</a>
+                <a href="#">ГАЛЕРЕЯ</a></div>
+                <div class="footer-item"><a href="#">СТАТЬИ</a><a href="#">КОНТАКТНАЯ ИНФОРМАЦИЯ</a></div>
+                <div class="footer-item"><a href=""></a><a href=""></a></div>
+                <div class="footer-item f-contact"><span class="c-call"><img src="images/bcall.png" alt="">+7 (81459) 3-70-09</span>
+                <span class="c-mail"><img src="images/bmail.png" alt=""><a href="mailto:vajnola@onego.ru">vajnola@onego.ru</a></span>
+                <div class="social"><a href="#"><img src="images/fb.png" alt=""></a>
+                <a href="#"><img src="images/inst.png" alt=""></a>
+                <a href="#"><img src="images/vk.png" alt=""></a></div></div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -221,6 +263,38 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script type="text/javascript">
+        // Latitude and longitude вашего места
+        var position = [64.5950323, 30.6115492];
+
+        function showGoogleMaps() {
+
+            var latLng = new google.maps.LatLng(position[0], position[1]);
+
+            var mapOptions = {
+                zoom: 16, // initialize zoom level - the max value is 21
+                streetViewControl: false, // hide the yellow Street View pegman
+                scaleControl: true, // allow users to zoom the Google Map
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                center: latLng
+            };
+
+            map = new google.maps.Map(document.getElementById('googlemaps'),
+                mapOptions);
+
+            // Show the default red marker at the location
+            marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
