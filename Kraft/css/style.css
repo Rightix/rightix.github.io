@@ -344,6 +344,9 @@ a {
 }
 
 .footer .col-5 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
