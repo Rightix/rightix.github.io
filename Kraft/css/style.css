@@ -45,7 +45,7 @@ li {
     display: inline-block!important;
     border-radius: 20px;
     border: 1px solid #ed9999;
-    padding: 15px 25px;
+    padding: 10px 15px;
     color: #ed8b8b;
 }
 
@@ -98,6 +98,9 @@ a {
     background: #f4f5f9;
     padding-top: 100px;
 }
+.section-3 .button{
+    padding: 15px 25px;
+}
 
 .section-4 {
     min-height: 630px;
@@ -117,7 +120,7 @@ a {
     align-items: center;
 }
 
-}
+
 .footer {
     background: url(../images/uzor2.png) no-repeat bottom right, #3c3f63;
     min-height: 360px;
