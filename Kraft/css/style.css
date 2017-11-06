@@ -227,20 +227,32 @@ a {
     padding: 155px 0px 0;
 }
 
-.why-h h1 {
+.why-h h2 {
     line-height: 100px;
     color: #424c5c;
     font-size: 64px;
+    margin-bottom: 240px;
 }
 
 .why-item {
-    padding-left: 50px;
+    padding-left:0px;
     font-family: Ubuntu;
     font-size: 13px;
     color: #9f9399;
     margin: 0 0 40px 0;
 }
-
+.left{
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.left .why-item{
+    padding-left: 20px;;
+}
 .why-img > img {
     width: 140px;
     height: 84px;
