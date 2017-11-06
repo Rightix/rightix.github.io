@@ -45,13 +45,13 @@ li {
     display: inline-block!important;
     border-radius: 20px;
     border: 1px solid #ed9999;
-    padding: 10px 15px;
+    padding: 15px 25px;
     color: #ed8b8b;
 }
 
 .button:hover {
     color: #ed8b8b;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(237, 153, 153, 0.10);
     -webkit-transition: ease-out 1s;
     -webkit-transition: ease-out 0.5s;
     transition: ease-out 0.5s;
@@ -96,7 +96,7 @@ a {
 .section-3 {
     min-height: 720px;
     background: #f4f5f9;
-    padding-top: 160px;
+    padding-top: 100px;
 }
 
 .section-4 {
@@ -104,7 +104,20 @@ a {
     padding-top: 90px;
 
 }
+.section-3 .col-7{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
 
+}
 .footer {
     background: url(../images/uzor2.png) no-repeat bottom right, #3c3f63;
     min-height: 360px;
@@ -256,6 +269,7 @@ a {
 
 .carousel {
     border-radius: 10px!important;
+    margin-bottom: 30px;
 }
 
 .carousel img {
