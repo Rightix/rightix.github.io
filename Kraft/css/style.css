@@ -37,7 +37,7 @@ li {
     list-style: none;
 }
 .button{
-    display: inline-block;
+    display: inline-block!important;
     border-radius: 20px;
     border: 1px solid #ed9999;
     padding: 10px 15px;
@@ -72,6 +72,7 @@ a{
 .footer{
     background: #3c3f63;
     min-height: 360px;
+    padding-top: 90px;
 }
 .top-h{
     position: relative;
@@ -237,19 +238,38 @@ a {
     width: 100%;
     padding: 10px;
 }
+
 .footer h3{
-    font-family: Ubuntu;
-font-size: 30px;
+    font-family: ROboto;
+font-size: 50px;
     color: #fff;
+    margin-bottom: 5px;
 }
 .footer h4{
-    
+    font-family: Roboto;
     font-size: 18px;
     color: #aaabbb;
+    margin-bottom: 30px;
 }
 .footer .col-7{
+    padding-left: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+.footer .button {
+    width: 150px;
+    text-align: center;
+}
+.vk{
+    color: #fff;
+    border-color: dodgerblue;
+}
+.footer .button:hover{
+    background: rgba(255,255,255,0.2);
+}
+.vk:hover{
+    color: #f3f3f3;
+
 }
