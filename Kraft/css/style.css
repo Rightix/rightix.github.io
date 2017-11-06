@@ -14,17 +14,73 @@ h1 {
     font-family: Intro-rust;
     color:#fff;
 }
+h2 {
+    position: relative;
+    font-family: Intro-Rust;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+    color: #424c5c;
+    font-size: 60px;
+    margin-bottom: 56px;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background: #ff73b3;
+    height: 7px;
+    width: 100px;
+}
 li {
     list-style: none;
 }
-
-.section {
-    min-height: 55vh;
+.button{
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid #ed9999;
+    padding: 10px 15px;
+    color: #ed8b8b;
 }
+.button:hover{
+    color: #ed8b8b;
+    background:rgba(0,0,0,0.05);
+        -webkit-transition: ease-out 1s;
+        -webkit-transition: ease-out 0.5s;
+        transition: ease-out 0.5s;
+}
+a{
+    text-decoration: none!important;
+}
+.section {
+    min-height: 50vh;
+}
+.section-2{
+    min-height: 920px;
+}
+.section-3{
+    min-height: 720px;
+    background: #f4f5f9;
+    padding-top: 160px;
+}
+.section-4{
+    min-height: 630px;
+    padding-top: 90px;
+    
+}
+.footer{
+    background: #3c3f63;
+    min-height: 360px;
+}
+.top-h{
+    position: relative;
 
+}
 .first {
     position: relative;
     padding-top: 30px;
+    background:  url(../images/uzor1.png) no-repeat bottom right,-webkit-gradient(linear, left top, right top, from(#00708c), to(#5356ad));
     background:  url(../images/uzor1.png) no-repeat bottom right,linear-gradient(to right, #00708c, #5356ad);
 }
 
@@ -47,6 +103,8 @@ li {
     font-weight: 500;
     text-decoration: none;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 20px;
     margin-right: 50px;
@@ -105,15 +163,16 @@ a {
     font-size: 64px;
 }
 .why-item{
-    
+    padding-left: 50px;
     font-family: Ubuntu;
     font-size: 13px;
     color: #9f9399;
     margin: 0 0 40px 0;
 }
-.why-item > img{
+.why-img > img{
     width: 140px;
     height:84px;
+    border-radius: 10px;
     
     
 
@@ -134,4 +193,57 @@ a {
 }
 .why-text p{
     margin: 20px 0;
+}
+.section-4 h2{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+.section-4 h2::after{
+    content: "";
+    position: absolute;
+    left: 40%;
+    background: #ff73b3;
+    height: 7px;
+    width: 100px;
+}
+.section-4 row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.p-item{
+    position: relative;
+    background: url(../images/img.jpg) no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 408px;
+    height: 323px;
+}
+.p-text{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.footer h3{
+    font-family: Ubuntu;
+font-size: 30px;
+    color: #fff;
+}
+.footer h4{
+    
+    font-size: 18px;
+    color: #aaabbb;
+}
+.footer .col-7{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
