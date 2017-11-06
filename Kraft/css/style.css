@@ -194,6 +194,12 @@ a {
 .why-text p{
     margin: 20px 0;
 }
+.carousel {
+    border-radius: 10px!important;
+}
+.carousel img{
+    border-radius: 10px!important;
+}
 .section-4 h2{
     position: relative;
     margin: 0 auto;
