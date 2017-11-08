@@ -98,11 +98,11 @@ a {
     background: #f4f5f9;
     padding-top: 50px;
 }
-.section-3::after{
+.section-3::before{
     position: relative;
     padding-top: 5px;
     text-align: center;
-    bottom: -40px;
+    top: -80px;
     display: block;
     font-size: 40px;
     color: #fff;
