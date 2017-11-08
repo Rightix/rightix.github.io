@@ -290,8 +290,7 @@ a {
 
 }
 .carousel-item{
-    margin: 0 auto;
-    width: 80%;
+/*    margin: auto auto;*/
 }
 .why-text {
     margin: 0 0 0 30px;
