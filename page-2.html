@@ -492,8 +492,7 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="webcam-block-wrapper">
-                <iframe src="https://www.geocam.ru/js/player/playerjs.html?file=https://s2.moidom-stream.ru/s/public/0000001203.m3u8&poster=https://s2.moidom-stream.ru/s/public/0000001203.jpg" width="680" height="510" frameborder="0" allowfullscreen="true"></iframe>
+            <div id="camera-player" data-src="https://s1.moidom-stream.ru/s/public/0000004919.m3u8" class="webcam-block-wrapper">
             </div>
         </div>
     </div>
@@ -522,9 +521,16 @@
 <script type="text/javascript" src="static/js/fancybox.umd.js"></script>
 
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
+<script type="text/javascript" src="static/js/playerjs.js"></script>
 
 <script type="text/javascript" src="static/js/main.js"></script>
-
+<script>
+    const cameraElement = document.getElementById('camera-player');
+    const cameraLink = cameraElement ? cameraElement.getAttribute('data-src') : null;
+    if (cameraLink) {
+        const player = new Playerjs({id: 'camera-player', file: cameraLink});
+    }
+</script>
 <script type="text/javascript" src="static/js/ie10-viewport-bug-workaround.js"></script>
 
 <script type="text/javascript" src="static/js/uikit-3.3.3/js/uikit.min.js"></script>
